@@ -1,0 +1,119 @@
+/*
+Theme Name: Delfyne theme
+Theme URI:
+Author: Moa Berg
+Author URI:
+Description: A wordpress theme for Delfyne.
+Version: 1.0
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Futura";
+}
+
+.container {
+  width: 100%;
+  padding: 10px;
+}
+nav {
+  width: 100%;
+  background-color: white;
+  color: black;
+  height: 10rem;
+  padding-left: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-fluid {
+  display: flex;
+  padding: 1rem;
+}
+
+.container-fluid a {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.navbar-nav {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(160, 156, 156);
+}
+
+.nav-link {
+  margin-top: 1rem;
+}
+
+.front-img {
+  width: 100%;
+  /* margin-top: 4rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front-img img {
+  width: 100%;
+}
+
+footer {
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+}
+.social .fa {
+  font-size: 30px;
+}
+
+.logo {
+  margin-right: 3rem;
+  width: 200px;
+}
+.intro {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.intro div {
+  width: 28.5%;
+  margin: 5rem;
+}
+
+.intro h2 {
+  margin-bottom: 2rem;
+  font-size: 41px;
+  line-height: 49px;
+  opacity: 60%;
+}
+
+.intro p {
+  font-family: "Baskerville";
+  line-height: 35px;
+  font-size: 27px;
+  letter-spacing: 1px;
+  opacity: 70%;
+}
+@media screen and (max-width: 700px) {
+  .logo {
+    width: 100px;
+  }
+}
