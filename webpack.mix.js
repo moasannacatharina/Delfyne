@@ -1,6 +1,6 @@
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
 
-require('dotenv').config();
+require("dotenv").config();
 
 /*
  |--------------------------------------------------------------------------
@@ -15,10 +15,12 @@ require('dotenv').config();
 
 const theme = process.env.WP_THEME;
 
-mix.setResourceRoot('../');
+mix.setResourceRoot("../");
 mix.setPublicPath(`public/themes/${theme}/assets`);
 
-mix.js('resources/scripts/app.js', 'app.js');
-mix.postCss('resources/styles/app.css', 'app.css', [
+mix.js("resources/scripts/app.js", "app.js");
+mix.postCss("resources/styles/app.css", "app.css", [
   //
 ]);
+
+mix.copyDirectory("resources/images", `public/themes/${theme}/assets/images`);

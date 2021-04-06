@@ -1,0 +1,99 @@
+.podcast-image {
+  width: 100%;
+  background-color: #fdd08c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.podcast-image img {
+  width: 300px;
+  height: 300px;
+  margin: 1rem;
+}
+
+.podcast-text {
+  text-align: center;
+}
+
+.podcast-text h1 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.podcast-text p {
+  text-align: justify;
+  line-height: 23px;
+  font-family: Baskerville;
+}
+
+.podcast-text button {
+  border: none;
+  margin: 2rem;
+  background-color: #ff9900;
+  padding: 1rem;
+  font-family: Baskerville;
+  font-size: 18px;
+}
+.podcast-text a {
+  text-decoration: none;
+  color: white;
+}
+
+.wp-rss-template-container a {
+  color: #706f6f;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+.wp-rss-template-container ul {
+  padding-inline-start: 0;
+  margin: 2rem;
+}
+.wp-rss-template-container li {
+  list-style: none;
+}
+
+.wprss-feed-meta {
+  font-family: Baskerville, serif;
+}
+
+@media screen and (min-width: 800px) {
+  .podcast-image {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+
+  .podcast-image img {
+    width: 400px;
+    height: 400px;
+    margin: 0 0 0 2rem;
+  }
+
+  .podcast-text {
+    margin: 3rem;
+    width: 50%;
+    text-align: unset;
+  }
+
+  .podcast-text h1 {
+    margin-bottom: 5rem;
+    font-size: 34px;
+  }
+
+  .podcast-text p {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: unset;
+    font-family: Baskerville, Helvetica, sans-serif;
+  }
+
+  .podcast-text button {
+    margin: 3rem 0;
+    font-size: 27px;
+    padding: 1rem 2rem;
+  }
+}
