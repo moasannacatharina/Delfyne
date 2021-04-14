@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 
-<div class="row">
+<div class="about-us-container">
     <div class="col">
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
