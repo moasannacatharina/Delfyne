@@ -36,6 +36,7 @@ nav a {
 .menu {
   display: none;
   position: absolute;
+  opacity: 0.9;
   top: 0;
   right: 0;
   width: 100%;
@@ -48,11 +49,12 @@ nav a {
   padding: 3rem;
   font-size: 30px;
   transition: 0.4s ease-in;
+  color: rgb(126, 121, 121);
 }
 .close-btn {
-  width: 30px;
+  width: 50px;
   position: absolute;
-  top: 40px;
+  top: 100px;
   right: 20px;
 }
 
@@ -178,19 +180,6 @@ footer a {
   font-size: 18px;
 }
 
-.about-us-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-us-container .col {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 50px;
-}
-
 @media screen and (min-width: 700px) {
   .logo {
     width: 200px;
@@ -273,6 +262,19 @@ footer a {
   .future-publish hr {
     width: 400px;
     margin: auto;
+  }
+
+  .about-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-us-container .col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px;
   }
 }
 
