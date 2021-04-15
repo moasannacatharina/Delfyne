@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "build": "mix --production",
-    "dev": "mix watch"
+    "dev": "mix watch",
+    "deploy": "git push fortrabbit; rsync -av ./public/themes/name/assets delfyne@deploy.eu2.frbit.com:delfyne.git:/srv/app/name/htdocs/public/themes/name"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
