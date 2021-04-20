@@ -337,7 +337,6 @@ footer a {
   }
   .wp-block-image img {
     width: unset;
-    height: unset;
   }
   .wp-block-image:first-child {
     order: unset;
@@ -359,6 +358,8 @@ footer a {
 
   .wp-block-image:first-child {
     justify-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
