@@ -31,6 +31,7 @@ $latestPost = get_posts($args);
     <div class="book-container">
         <div class="book-img-container">
             <img src="uploads/2021/04/unnamed.jpeg" />
+
         </div>
         <div class="book-text">
             <h3>Priapeia</h3>

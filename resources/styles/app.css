@@ -161,7 +161,7 @@ footer a {
 }
 
 .future-publish h3 {
-  font-family: Futura, Arial, sans-serif;
+  font-family: "Futura", Arial, sans-serif;
   font-weight: 400;
   font-size: 34px;
   color: rgb(160, 156, 156);
@@ -169,15 +169,55 @@ footer a {
 
 .future-publish span {
   font-size: 20px;
-  font-family: Baskerville, serif;
+  font-family: "Baskerville", serif;
   font-style: italic;
 }
 
 .future-publish p {
-  font-family: Baskerville, serif;
+  font-family: "Baskerville", serif;
   line-height: 22px;
   margin: 1rem 0;
   font-size: 18px;
+}
+
+.about-us-container {
+  font-family: "Baskerville", serif;
+  font-size: 18px;
+}
+
+.about-us-container .col {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.about-us-container .col p {
+  width: 80%;
+  margin-bottom: 2rem;
+}
+
+.wp-block-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wp-block-image img {
+  width: 80%;
+}
+
+.wp-block-image:first-child {
+  order: 1;
+}
+.about-us-container .col p:nth-child(even) {
+  order: 3;
+}
+.about-us-container .col p:nth-child(odd) {
+  order: 4;
+}
+
+.wp-block-image:nth-child(even) {
+  order: 3;
 }
 
 @media screen and (min-width: 700px) {
@@ -246,17 +286,21 @@ footer a {
 
   .book-container {
     display: flex;
-    justify-content: center;
     width: 80%;
   }
 
   .book-img-container {
     width: 50%;
-    margin-right: 5rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
   }
 
   .book-text {
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .future-publish hr {
@@ -275,6 +319,44 @@ footer a {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 50px;
+    align-items: unset;
+    flex-flow: unset;
+  }
+
+  .about-us-container .col p {
+    width: 45%;
+    align-self: center;
+    line-height: 32px;
+    margin-bottom: unset;
+  }
+
+  .wp-block-image {
+    width: unset;
+    display: unset;
+  }
+  .wp-block-image img {
+    width: unset;
+  }
+  .wp-block-image:first-child {
+    order: unset;
+  }
+  .about-us-container .col p:nth-child(even) {
+    order: unset;
+  }
+  .about-us-container .col p:nth-child(odd) {
+    order: unset;
+  }
+
+  .wp-block-image:nth-child(even) {
+    order: unset;
+  }
+
+  .about-us-container .col p:nth-child(odd) {
+    justify-self: flex-end;
+  }
+
+  .wp-block-image:first-child {
+    justify-self: flex-end;
   }
 }
 

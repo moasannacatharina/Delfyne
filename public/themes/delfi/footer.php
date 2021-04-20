@@ -3,8 +3,8 @@
 <footer>
 
     <section class="social">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-instagram"></a>
+        <a href="https://www.facebook.com/delfyneforlag/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/allatidersinsta/" class="fa fa-instagram"></a>
     </section>
 
 </footer>
