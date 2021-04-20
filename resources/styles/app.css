@@ -204,6 +204,7 @@ footer a {
 
 .wp-block-image img {
   width: 80%;
+  height: 80%;
 }
 
 .wp-block-image:first-child {
@@ -336,6 +337,7 @@ footer a {
   }
   .wp-block-image img {
     width: unset;
+    height: unset;
   }
   .wp-block-image:first-child {
     order: unset;
