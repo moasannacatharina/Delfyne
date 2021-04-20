@@ -30,7 +30,7 @@ $latestPost = get_posts($args);
     <h2>Kommande publiceringar</h2>
     <div class="book-container">
         <div class="book-img-container">
-            <img src="../../uploads/2021/03/priapeia.jpeg" />
+            <img src="uploads/2021/04/unnamed.jpeg" />
         </div>
         <div class="book-text">
             <h3>Priapeia</h3>
@@ -39,7 +39,7 @@ $latestPost = get_posts($args);
     </div>
     <div class="book-container">
         <div class="book-img-container">
-            <img src="../../uploads/2021/03/delfyne-omslag-prototyp.png" />
+            <img src="/uploads/2021/04/delfyne-omslag-prototyp.png" />
         </div>
         <div class="book-text">
             <h3>Agricola</h3>

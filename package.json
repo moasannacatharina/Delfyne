@@ -3,7 +3,7 @@
   "scripts": {
     "build": "mix --production",
     "dev": "mix watch",
-    "deploy": "git push fortrabbit; rsync -av ./public/themes/delfi/assets delfynepublish@deploy.eu2.frbit.com:/srv/app/delfyne/htdocs/public/themes/delfi"
+    "deploy": "git push fortrabbit; rsync -av ./public/themes/delfi/assets delfynepublish@deploy.eu2.frbit.com:/srv/app/delfynepublish/htdocs/public/themes/delfi"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
