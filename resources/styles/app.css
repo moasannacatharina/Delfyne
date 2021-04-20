@@ -319,7 +319,7 @@ footer a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 10px 50px;
     align-items: unset;
     flex-flow: unset;
   }
@@ -337,9 +337,6 @@ footer a {
   }
   .wp-block-image img {
     width: unset;
-  }
-  .wp-block-image:first-child {
-    order: unset;
   }
   .about-us-container .col p:nth-child(even) {
     order: unset;
@@ -361,6 +358,7 @@ footer a {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    order: unset;
   }
 }
 
