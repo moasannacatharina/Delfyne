@@ -21,12 +21,12 @@
 .podcast-text h1 {
   color: white;
   margin-bottom: 1rem;
+  font-family: "Futura", Helvetica, sans-serif;
 }
 
 .podcast-text p {
   text-align: justify;
   line-height: 23px;
-  font-family: Baskerville;
 }
 
 .podcast-text button {
@@ -46,6 +46,7 @@
   color: #706f6f;
   text-decoration: none;
   line-height: 30px;
+  font-family: "Futura", Helvetica, sans-serif;
 }
 
 .wp-rss-template-container ul {
