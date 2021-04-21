@@ -275,6 +275,17 @@ footer a:hover {
   font-weight: 400;
   font-family: "Futura", Helvetica, sans-serif;
 }
+
+@media screen and (min-width: 700px) {
+  .future-publish img {
+    width: 80%;
+    max-height: unset;
+  }
+
+  .front-img img {
+    height: 400px;
+  }
+}
 @media screen and (min-width: 900px) {
   .logo {
     width: 300px;
@@ -337,11 +348,6 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  .future-publish img {
-    width: 80%;
-    max-height: unset;
   }
 
   .book-container {
