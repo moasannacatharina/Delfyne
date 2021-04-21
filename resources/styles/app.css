@@ -276,6 +276,14 @@ footer a:hover {
   font-family: "Futura", Helvetica, sans-serif;
 }
 
+.contact-container a {
+  color: black;
+}
+
+.contact-container a:hover {
+  color: #a26416;
+}
+
 @media screen and (min-width: 700px) {
   .future-publish img {
     width: 80%;
