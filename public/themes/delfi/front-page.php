@@ -16,7 +16,7 @@ $latestPost = get_posts($args);
 
 <section class="intro">
     <div class="col-left">
-        <h2>Delfyne Förlag</h2>
+        <h1>Delfyne Förlag</h1>
         <p>På det nystartade Delfyne förlag tror vi på att en gemensam mänsklig erfarenhet visar sig i litteraturen och att den går att finna genom hela historien. Därför har vi valt att inrikta oss på att översätta, kommentera och ge ut en aning udda klassiker från antiken och framåt som visar hur vi alltid har kämpat med samma frågor, skrattat, druckit vin och strävat efter att få vardagen att gå ihop.</p>
     </div>
     <div class="col-right">
@@ -30,7 +30,7 @@ $latestPost = get_posts($args);
     <h2>Kommande publiceringar</h2>
     <div class="book-container">
         <div class="book-img-container">
-            <img src="uploads/2021/04/unnamed.jpeg" />
+            <img src="/uploads/2021/04/unnamed.jpeg" />
 
         </div>
         <div class="book-text">
