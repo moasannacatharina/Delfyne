@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Futura";
+  font-family: "Baskerville";
 }
 
 .container {
@@ -24,6 +24,7 @@ nav {
 nav a {
   text-decoration: none;
   color: rgb(160, 156, 156);
+  font-family: "Futura", sans-serif;
 }
 
 .container-fluid {
@@ -178,6 +179,8 @@ footer a {
   line-height: 22px;
   margin: 1rem 0;
   font-size: 18px;
+  opacity: 0.7;
+  letter-spacing: 1px;
 }
 
 .about-us-container {
@@ -194,6 +197,8 @@ footer a {
 .about-us-container .col p {
   width: 80%;
   margin-bottom: 2rem;
+  opacity: 0.7;
+  line-height: 22px;
 }
 
 .wp-block-image {
@@ -221,7 +226,29 @@ footer a {
   order: 3;
 }
 
-@media screen and (min-width: 700px) {
+.contact-container {
+  min-height: calc(80vh - 10rem);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+.contact-container .col {
+  width: 60%;
+  margin-bottom: 2rem;
+}
+
+.contact-container .col p {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.contact-container h1 {
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+@media screen and (min-width: 900px) {
   .logo {
     width: 200px;
   }
@@ -318,10 +345,10 @@ footer a {
   .about-us-container .col {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     grid-gap: 10px 50px;
     align-items: unset;
     flex-flow: unset;
+    width: 60%;
   }
 
   .about-us-container .col p {
