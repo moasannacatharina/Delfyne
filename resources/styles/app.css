@@ -167,6 +167,7 @@ footer a:hover {
 
 .future-publish img {
   width: 60%;
+  max-height: 310px;
 }
 
 .book-container {
@@ -336,6 +337,11 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .future-publish img {
+    width: 80%;
+    max-height: unset;
   }
 
   .book-container {
