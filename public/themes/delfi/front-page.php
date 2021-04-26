@@ -44,8 +44,8 @@ $latestPost = get_posts($args);
         </div>
         <div class="book-text">
             <h3>Agricola</h3>
-            <span>av: Publius Cornelius Tacticus</span>
-            <p>I Agricola möter vi den romerska historikern Tacticus svidande kritik av hela den romerska civilisationen och den grymma verkligheten bakom Britanniens erövring. </p>
+            <span>av: Publius Cornelius Tacitus</span>
+            <p>I Agricola möter vi den romerska historikern Tacitus svidande kritik av hela den romerska civilisationen och den grymma verkligheten bakom Britanniens erövring. </p>
         </div>
     </div>
 </section>
