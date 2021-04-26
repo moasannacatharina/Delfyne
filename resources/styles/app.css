@@ -224,6 +224,10 @@ footer a:hover {
   line-height: 22px;
 }
 .about-us-container .col a {
+  color: black;
+}
+
+.about-us-container .col a:hover {
   color: #a26416;
 }
 .wp-block-image {
