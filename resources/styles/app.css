@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Futura";
+  font-family: "Baskerville", Arial, serif;
 }
 
 .container {
@@ -21,9 +21,21 @@ nav {
   justify-content: space-between;
 }
 
+.active {
+  text-decoration: underline;
+}
+
 nav a {
   text-decoration: none;
   color: rgb(160, 156, 156);
+  font-family: "Baskerville", serif;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  color: #d29c4a;
+  text-decoration: underline;
 }
 
 .container-fluid {
@@ -100,6 +112,11 @@ footer a {
   text-decoration: none;
   color: white;
   margin: 10px;
+  transition: 0.2s ease;
+}
+
+footer a:hover {
+  color: #c3c2c0;
 }
 .social .fa {
   font-size: 30px;
@@ -107,6 +124,10 @@ footer a {
 
 .logo {
   margin: 1rem;
+  width: 200px;
+}
+
+.logo-menu {
   width: 100px;
 }
 .intro {
@@ -125,6 +146,7 @@ footer a {
   font-size: 30px;
   line-height: 49px;
   opacity: 0.6;
+  font-family: "Futura", Helvetica, sans-serif;
 }
 
 .intro p {
@@ -133,16 +155,18 @@ footer a {
   font-size: 18px;
   letter-spacing: 1px;
   opacity: 0.7;
-  text-align: justify;
+  /* text-align: justify; */
 }
 .future-publish h2 {
   text-align: center;
   color: rgb(160, 156, 156);
   margin-top: 2rem;
+  font-family: "Futura", Helvetica, sans-serif;
 }
 
 .future-publish img {
-  width: 70%;
+  width: 60%;
+  max-height: 310px;
 }
 
 .book-container {
@@ -161,7 +185,7 @@ footer a {
 }
 
 .future-publish h3 {
-  font-family: Futura, Arial, sans-serif;
+  font-family: "Futura", Arial, sans-serif;
   font-weight: 400;
   font-size: 34px;
   color: rgb(160, 156, 156);
@@ -169,20 +193,113 @@ footer a {
 
 .future-publish span {
   font-size: 20px;
-  font-family: Baskerville, serif;
+  font-family: "Baskerville", serif;
   font-style: italic;
 }
 
 .future-publish p {
-  font-family: Baskerville, serif;
+  font-family: "Baskerville", serif;
   line-height: 22px;
   margin: 1rem 0;
   font-size: 18px;
+  opacity: 0.7;
+  letter-spacing: 1px;
+}
+
+.about-us-container {
+  font-family: "Baskerville", serif;
+  font-size: 18px;
+}
+
+.about-us-container .col {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.about-us-container .col p {
+  width: 80%;
+  margin-bottom: 2rem;
+  opacity: 0.7;
+  line-height: 22px;
+}
+.about-us-container .col a {
+  color: black;
+}
+
+.about-us-container .col a:hover {
+  color: #a26416;
+}
+.wp-block-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.wp-block-image img {
+  width: 80%;
+  height: 80%;
+}
+
+.wp-block-image:first-child {
+  order: 1;
+}
+.about-us-container .col p:nth-child(even) {
+  order: 3;
+}
+.about-us-container .col p:nth-child(odd) {
+  order: 4;
+}
+
+.wp-block-image:nth-child(even) {
+  order: 3;
+}
+
+.contact-container {
+  min-height: calc(80vh - 10rem);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  opacity: 0.7;
+}
+
+.contact-container .col {
+  width: 60%;
+  margin-bottom: 2rem;
+}
+
+.contact-container .col p {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.contact-container h1 {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-family: "Futura", Helvetica, sans-serif;
+}
+
+.contact-container a {
+  color: black;
+}
+
+.contact-container a:hover {
+  color: #a26416;
 }
 
 @media screen and (min-width: 700px) {
+  .future-publish img {
+    width: 80%;
+    max-height: unset;
+  }
+
+  .front-img img {
+    height: 400px;
+  }
+}
+@media screen and (min-width: 900px) {
   .logo {
-    width: 200px;
+    width: 300px;
   }
 
   .hamburger-menu-img {
@@ -246,17 +363,21 @@ footer a {
 
   .book-container {
     display: flex;
-    justify-content: center;
     width: 80%;
   }
 
   .book-img-container {
     width: 50%;
-    margin-right: 5rem;
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
   }
 
   .book-text {
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .future-publish hr {
@@ -273,8 +394,48 @@ footer a {
   .about-us-container .col {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 10px 50px;
+    align-items: unset;
+    flex-flow: unset;
+    width: 60%;
+  }
+
+  .about-us-container .col p {
+    width: 100%;
+    align-self: center;
+    line-height: 32px;
+    margin-bottom: unset;
+  }
+
+  .wp-block-image {
+    width: 100%;
+    display: unset;
+  }
+  .wp-block-image img {
+    width: 100%;
+    height: 100%;
+  }
+  .about-us-container .col p:nth-child(even) {
+    order: unset;
+  }
+  .about-us-container .col p:nth-child(odd) {
+    order: unset;
+  }
+
+  .wp-block-image:nth-child(even) {
+    order: unset;
+  }
+
+  .about-us-container .col p:nth-child(odd) {
+    justify-self: flex-end;
+  }
+
+  .wp-block-image:first-child {
+    justify-self: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    order: unset;
   }
 }
 

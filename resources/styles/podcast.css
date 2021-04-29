@@ -21,12 +21,12 @@
 .podcast-text h1 {
   color: white;
   margin-bottom: 1rem;
+  font-family: "Futura", Helvetica, sans-serif;
 }
 
 .podcast-text p {
   text-align: justify;
   line-height: 23px;
-  font-family: Baskerville;
 }
 
 .podcast-text button {
@@ -36,6 +36,12 @@
   padding: 1rem;
   font-family: Baskerville;
   font-size: 18px;
+  box-shadow: 0px 0px 4px 0px #693f0b;
+  transition: 0.3s ease;
+}
+
+.podcast-text button:hover {
+  box-shadow: 0px 0px 2px 0px #693f0b;
 }
 .podcast-text a {
   text-decoration: none;
@@ -46,6 +52,11 @@
   color: #706f6f;
   text-decoration: none;
   line-height: 30px;
+  font-family: "Futura", Helvetica, sans-serif;
+  transition: 0.1s ease;
+}
+.wp-rss-template-container a:hover {
+  font-size: 17px;
 }
 
 .wp-rss-template-container ul {
@@ -80,7 +91,7 @@
   }
 
   .podcast-text h1 {
-    margin-bottom: 5rem;
+    margin: 1rem 0 3rem;
     font-size: 34px;
   }
 
